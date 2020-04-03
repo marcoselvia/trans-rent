@@ -1,0 +1,24 @@
+.contenedor{
+    align-content: center;
+}
+.card{
+    border: 3px black;
+}
+
+.card {
+    box-shadow: 0 0 0 4px #ddd;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 0 4px rgb(133, 30, 30);
+  }
+  
+  .card{
+    float: left;
+    padding: 5px;
+  }
+  .card div{
+    height: 150px;
+    width: 150px; 
+    background-color: #2980B9;
+  }

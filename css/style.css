@@ -1,0 +1,124 @@
+/* version movil */
+.container {
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 5rem;
+    
+}
+ /* .box-1,
+.box-2,
+.box-3
+ {
+  background: #eaeaea;
+}  */
+/* Para definir el área que ocupara cada caja de nuestro contenedor*/
+ .box-1 {
+    grid-area: box1;
+    align-content: center;
+  }
+  
+  .box-2 {
+    grid-area: box2;
+  }
+  
+  .box-3 {
+    grid-area: box3;
+  }
+  
+  /* version tablet */
+  @media only screen and (min-width: 768px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    .box-1 {
+		grid-row: 5 / 4;
+		grid-column: 4 / 4;
+  }
+
+    .box-2 {
+    grid-row: 5 / 5;
+    grid-column: 3 / 3;
+  }
+
+	 .box-3 { 
+    grid-column: 3 / 4;
+    grid-row: 4 / 4;
+  } 
+
+
+}
+/* parrafo en columnas */
+footer{
+  column-rule: black solid 2px;
+  columns: 3;
+  text-align: justify;
+}
+
+.pa {
+  font-weight: bold;
+}
+h1{
+  font-weight: bold;
+}
+
+a {
+  color: rgb(141, 22, 22);
+  background-color: rgb(65, 29, 226);
+  transition: all 1s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  background-color: rgb(100, 11, 11);
+}
+/*  */
+.flash {
+  
+  font-family: Arial;
+  background-color: #a8cf45;
+  text-align: center;
+  font-weight: bolder;
+  width: 220px;
+  height: 200px;
+  position: relative;
+  margin: 50px;
+  line-height: 200px;
+  
+}
+
+/* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
+
+.flash:hover {
+  
+  animation: 300ms flash infinite;
+}
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes flash {
+  
+  0% {
+    opacity: 1;
+  }
+  
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  
+  75% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+  
+}

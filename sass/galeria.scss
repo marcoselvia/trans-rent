@@ -1,0 +1,37 @@
+a {
+    color: blue;
+    transition: color ease .8s;
+    &:hover {
+        color: black;
+    }
+}
+
+$padding: 6px;
+
+nav {
+  ul {
+    margin: 0;
+    padding: $padding;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: $padding 12px;
+    text-decoration: none;
+  }
+}
+
+@mixin h1 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.h1 {
+  @include h1();
+  background-color: green;
+}

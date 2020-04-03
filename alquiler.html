@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> RENT TRANSPORT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/alq.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- navbar -->
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">RENTA DE TRANSPORTES</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="informacion.html">INFORMACION DE UNA EMPRESA</a></li>
+      <li><a href="contacto.html">CONTACTENOS</a></li>
+    </ul>
+    
+  </div>
+</nav>
+   
+    <!-- FORMULARIO -->
+    <br>
+<div class="container" style="max-width: 650px; min-width: 400px;">
+  <div class="card">
+    <h2 class="card-header text-center">formulario de Registro</h2>
+    <div class="card-body">
+      <form id="myForm" onsubmit="return validar()" action="alqui.html">
+        <div class="form-group">
+          <legend>DATOS GENERALES</legend>
+          <label for="user">Nombre del Cliente</label>
+          <input type="text" class="form-control" id="user" placeholder="Nombre" required>
+          <label for="email">email</label>
+          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+          <label for="Pass1">Telefono</label>
+          <input type="text" class="form-control" id="pass1" placeholder="numero de telefono" required>
+          <label for="pass2">Lugar exacto de salida</label>
+          <input type="text" class="form-control" id="pass2" placeholder="salida" required>
+          <label for="pass3">Lugar exacto al destino</label>
+          <input type="text" class="form-control" id="codipos" placeholder="destino" required>
+          <label for="pass3">Fecha de retorno</label>
+          <input type="date" class="form-control" id="codipos" placeholder="retorno" required>
+          <label for="passs4">Numero de pasajeros</label>
+          <input type="text" class="form-control" id="codipos" placeholder="pasajeros" required>
+          <label for="pass3">Hora de salida</label>
+          <input type="datetime" class="form-control" id="codipos" placeholder="ej. 5:00AM>" required> 
+          <label for="pass3">Hora de retorno</label>
+          <input type="datetime" class="form-control" id="codipos" placeholder="Ej. 5:00PM" required>
+        </div>
+
+        <div class="form-group">
+         
+          <label for="sexo">Sexo:</label>
+          <input type="radio" id="sexo" name="sexo"> Masculino
+          <input type="radio" id="sexo" name="sexo"> Femenino <br>
+          <label for="ciudad">Ciudad:</label>      
+            <select class="form-control" id="ciudad" required>
+              <option value="Lota">Seleccionar</option>
+              <option value="chiqui">Chiquimula</option>
+              <option value="zaca">Zacapa</option>
+              <option value="progre">El Progreso</option>
+            </select>      
+          <label for="terminos">Legalidades:</label><br>
+          <input type="checkbox" id="terminos" required> Acepto los términos y condiciones          
+        </div>
+        <a href="alqui.html" style="border-bottom-style: none;" >Enviar</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src='js/script.js'></script>
+</body>
+</html>
